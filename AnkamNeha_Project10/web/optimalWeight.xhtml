@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Optimal Planet Calculator</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <style type="text/css">
+            div{
+                border-style: solid;
+                border-color: red;
+                text-align: initial;
+                font-family: monospace
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <h1>The Optimal Planet Calculator</h1>
+            <p> The Optimal Planet Calculator has spoken, #{spaceWeight.name}, and recommends the following:</p><br></br>
+            <p>Desired Weight: #{spaceWeight.desired} #{spaceWeight.useMetric()}</p>
+            <p>Nearest Desired Weight: #{spaceWeight.calWeight()} #{spaceWeight.useMetric()}</p>
+            <p>Planet To Relocate To: #{spaceWeight.relocate}</p>
+        </div>
+    </body>
+</html>

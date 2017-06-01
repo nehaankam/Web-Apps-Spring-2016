@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+     <h:head>
+        <title>Optimal Weight Finder</title>
+        <style type="text/css">
+            div{
+                border-style: solid;
+                border-color: red;
+            font-family: monospace}
+        </style>
+    </h:head>
+    <h:body>
+     
+       <div>
+           <h:form>
+            <h1>The Amazing Space Weight Loss/Gain Program</h1>  
+            Are you having trouble getting to your ideal "summer weight"? Whether you would like to<br>
+            be lighter or heavier, fear not, the Amazing Space Weight Loss/Gain Program has a</br>
+            solution -- just relocate to a planet where you'll be that ideal weight.
+            <h2>Instructions:</h2>
+            <table>
+                <tr><td>1. </td><td>Enter your name, Weight  on Earth, and the weight you  would like to be.</td></tr>
+                <tr><td>2. </td><td>Enter potential planets -- one or more of (Mercury, Venus, Earth, Mars, Jupiter,</td></tr>
+                <tr><td></td><td>Saturn, Uranus, Neptune) separated by spaces -- where you would be willing to</td></tr>
+                <tr><td></td><td>relocate to.</td></tr>
+                <tr><td>3. </td><td>Click on the button to find the optimal planet, from among those you listed, where</td></tr>
+                <tr><td></td><td>you would weight closest to your desired weight.</td></tr>
+            </table>
+            <br></br>
+         
+            <h:panelGrid columns="2">
+                Name:<h:inputText value="#{spaceWeight.name}"/>
+                Weight on Earth:<h:inputText value="#{spaceWeight.weight}"/>
+                Desired Weight:<h:inputText value="#{spaceWeight.desired}"/>
+                Potential Planets(s):<h:inputText value="#{spaceWeight.potential}"/>
+                Use Metric <h:selectBooleanCheckbox value="#{spaceWeight.metric}"/>
+                <h:commandButton value="Find Optimal Planet"
+                             action="optimalWeight" />
+            </h:panelGrid>
+            </h:form>
+            <br></br>
+        </div>
+    </h:body>
+</html>
+
