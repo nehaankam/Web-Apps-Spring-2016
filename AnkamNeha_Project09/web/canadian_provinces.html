@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>CANADIAN PROVINCES</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js">
+        </script>
+        <script src="canadian_provinces.js"></script>
+        
+    </head>
+    <body>
+        <h1>Information about Canadian Provinces</h1>
+        <h2>Find all provinces with</h2>
+
+        <table>
+            <tr>
+                <td>  population greater than</td>
+                <td align="left"> <input type="text"  name = "population" id="population"> </td> 
+            </tr>
+            <tr>
+                <td>  land area greater than (in square kilometers) </td>
+                <td align="left"> <input type="text"   name = "land" id="land"> </td> 
+            </tr>
+            <tr>
+                <td>  water area greater than (in square kilometers)</td>
+                <td align="left">  <input type="text"  name = "water" id="water"> </td> 
+            </tr>
+        </table> 
+
+
+
+
+
+
+
+        <p>
+            <input type="button"  id="find" value="Find"> 
+        </p>
+        <table id="province" border ="1">
+            <thead>
+
+                <tr>
+                    <th>Name</th>
+                    <th>Population</th>
+                    <th>Land Area</th>
+                    <th>Water Area</th>
+                    <th>Total Area</th>
+                    <th>Official Languages(s)</th>
+                </tr>
+            </thead>
+            <tbody id="provinces"></tbody>
+        </table>
+    </body>
+</html>
