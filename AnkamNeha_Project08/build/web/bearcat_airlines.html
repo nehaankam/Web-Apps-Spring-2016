@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>BEARCAT AIRLINES</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       
+        <script type="text/javascript" src="bearcat_airlines.js"></script>
+        <style>
+            h2{
+                color: green;
+            }
+            h3{
+                color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+        <h2>Bearcat Aircraft Weight Estimation Form </h2>
+      <p>
+         Type of Aircraft
+         <select id="type">
+             <option value=null>Select the aircraft</option>
+            <option value="DC9">DC9</option>
+            <option value="MD83">MD83</option>
+         </select>
+      </p>
+      <fieldset class="options">
+         <legend>Fuel Level</legend>
+         <input type="radio" name="size" id="topoff" value="topoff">Top Off<br>
+         <input type="radio" name="size" id="half" value ="half">Half<br>
+         <input type="radio" name="size" id="minimum" value ="minimum">Minimum<br>
+      </fieldset>
+      <p>
+      Total Number of Passengers(0-100)
+      <input type="text" name = "passengers" id="passengers">
+      </p>
+      <fieldset class="options">
+         <legend>Additional Safety Equipment</legend>
+         <input type="checkbox" name = "equipment" id="raft" value ="raft">Life Raft<br>
+         <input type="checkbox" name = "equipment" id="vest" value ="vest">Life Vest<br>
+      </fieldset>
+      
+      <p>
+      <input type="button" id="estimate" value="Estimate"> 
+      </p>
+      
+      <h3 id="weightandtime"></h3>
+        
+        </form>
+    </body>
+</html>
