@@ -1,0 +1,32 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jan 16, 2016, 8:42:03 PM
+    Author     : Neha Ankam
+*/
+
+h3{
+    background-color: bisque;
+    color: brown;
+    font-size: larger;
+    font-style: italic;
+}
+p{
+    font-size: large;
+    color: red;
+}
+.degree{
+    color: blue;
+}
+#name{
+    color: green;
+}
+.img {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 1330px;
+}
