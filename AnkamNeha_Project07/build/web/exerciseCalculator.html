@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Bearcat Exercise Calculator</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link type="text/css" rel="stylesheet" href="excerciseCalculator.css">
+    </head>
+    <body>
+        <form action="exerciseServelet" method="post">
+        <p>
+         Activity: 
+         <select name="type">
+            <option value="none">Select an activity</option>
+            <option value="Aerobics">Aerobics</option>
+            <option value="Baseball">Baseball</option>
+            <option value="Billiards">Billiards</option>
+            <option value="Climbing">Climbing</option>
+            <option value="Fencing">Fencing</option>
+            <option value="Golf">Golf</option>
+            <option value="Hockey">Hockey</option>
+            <option value="Rugby">Rugby</option>
+            <option value="Swimming">Swimming</option>
+         </select>
+      </p>
+      <fieldset>
+         <legend>Method of Engagement</legend>
+         <input type="radio" name= "method" value = "participating" id="participating" checked="checked">Participating
+         <input type="radio" name= "method" value = "watcing" id="watcing">Watching<br>
+         <br>
+         Duration (hours): 
+         <input type="text" name="duration" id ="style1">
+      </fieldset>
+      <fieldset>
+         <legend>Demographics</legend>
+         <input type="radio" name="gender"  value ="male" id="male" checked="checked">Male<br>
+         <input type="radio" name="gender" value="female"  id="female">Female<br>
+         <br>
+            Height : 
+            <input type="text" name="height" id="style2">
+         &nbsp;&nbsp;&nbsp;Weight :
+         <input type="text" name="weight" id="style2">
+         &nbsp;&nbsp;&nbsp;Age :
+         <input type="text" name="age" id="style2"><br>
+         <br>
+         <input type="checkbox" name = "metric" value = "metric" id="metric">Use Metric<br> 
+      </fieldset>
+      
+      <input type="submit" value="Calculate Calories"> 
+    </form>
+    </body>
+</html>
