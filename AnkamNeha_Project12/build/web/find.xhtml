@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+   xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Manufacturers</title>
+    </h:head>
+    <h:body>
+        List of Manufacturers in #{manufacturerList.state}
+        <h:dataTable value="#{manufacturerList.manufacturersFound}" var="manufacturer" border="1">
+            <h:column>
+                <f:facet name="header">Name</f:facet>
+                    #{manufacturer.name}
+            </h:column>
+            <h:column>
+                <f:facet name="header">Representative</f:facet>
+                    #{manufacturer.rep}
+            </h:column>
+            <h:column>
+                <f:facet name="header">Phone</f:facet>
+                    #{manufacturer.phone}
+            </h:column>
+        </h:dataTable>
+    </h:body>
+</html>
+
